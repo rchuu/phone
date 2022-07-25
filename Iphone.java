@@ -4,8 +4,8 @@ public class Iphone extends Phone implements Ringable {
     }
 
     @Override
-    public String ring() {
-        return "iPhone is ringing";
+    public String Ring() {
+        return this.getRingTone();
     }
 
     @Override
@@ -15,6 +15,9 @@ public class Iphone extends Phone implements Ringable {
 
     @Override
     public void displayInfo() {
-        System.out.println("iPhone");
+        System.out.println("Version Number: " + this.getVersionNumber());
+        System.out.println("Battery Percentage: " + this.getBatteryPercentage());
+        System.out.println("Carrier: " + this.getCarrier());
+        System.out.println("Ring Tone: " + this.getRingTone());
     }
 }
